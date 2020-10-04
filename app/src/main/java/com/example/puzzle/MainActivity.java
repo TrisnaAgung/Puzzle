@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.example.puzzle.Model.Board;
 import com.example.puzzle.Model.Place;
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mainView = (ViewGroup) findViewById(R.id.mainLayout);
+        mainView    = (ViewGroup) findViewById(R.id.mainLayout);
+        getSupportActionBar().setTitle("Bermain Puzzle Huruf");
         this.newGame();
     }
 
@@ -84,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                                                         int which) {
 
                                     }
-                                }).setIcon(android.R.drawable.ic_dialog_alert)
+                                })
                         .show();
                 break;
             case R.id.action_exit:
