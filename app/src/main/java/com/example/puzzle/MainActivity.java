@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
         public void solved(int numOfMoves) {
 //            moves.setText("Solved in " + Integer.toString(numOfMoves) + " moves!");
-            Toast.makeText(getApplicationContext(), "You won!",
+            Toast.makeText(getApplicationContext(), "You won it!",
                     Toast.LENGTH_LONG).show();
         }
     };
